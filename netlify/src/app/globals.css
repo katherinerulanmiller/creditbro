@@ -91,3 +91,6 @@ body{background:#fcfcfb}.new-site{background:radial-gradient(ellipse at 0% 0%,#d
 .brand-intro-minimal{animation-duration:3.4s}.brand-intro-minimal .intro-typed>span{animation-duration:.35s}
 
 .brand-intro-minimal{animation-duration:2.3s}.brand-intro-minimal .intro-typed>span{will-change:opacity}
+
+/* Crossfade the welcome into the page beneath it. */
+.brand-intro-minimal{animation:creditbro-intro-away 2.7s linear both}.nav[aria-hidden="true"],.new-site[aria-hidden="true"]{animation:creditbro-page-in 2.7s linear both}@keyframes creditbro-intro-away{0%,74%{opacity:1}100%{opacity:0}}@keyframes creditbro-page-in{0%,74%{opacity:0}100%{opacity:1}}@media(prefers-reduced-motion:reduce){.brand-intro-minimal{animation:creditbro-intro-away 2.7s linear both}.nav[aria-hidden="true"],.new-site[aria-hidden="true"]{animation:creditbro-page-in 2.7s linear both}}
