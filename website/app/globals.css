@@ -100,3 +100,6 @@ body{background:#fcfcfb}.new-site{background:radial-gradient(ellipse at 0% 0%,#d
 
 /* Let the brand linger as Home comes into view. */
 .brand-intro-minimal,.nav[aria-hidden="true"],.new-site[aria-hidden="true"]{animation-duration:3.15s;animation-timing-function:cubic-bezier(.4,0,.2,1)}@keyframes creditbro-intro-away{0%,61%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-6px) scale(1.008)}}@keyframes creditbro-page-in{0%,58%{opacity:0;transform:translateY(8px)}96%,100%{opacity:1;transform:translateY(0)}}@keyframes creditbro-intro-fade-only{0%,61%{opacity:1}100%{opacity:0}}@keyframes creditbro-page-fade-only{0%,58%{opacity:0}96%,100%{opacity:1}}
+
+/* Faster wordmark, with overlapping letter fades and an earlier page reveal. */
+.brand-intro-minimal,.nav[aria-hidden="true"],.new-site[aria-hidden="true"]{animation-duration:2.35s;animation-timing-function:cubic-bezier(.4,0,.2,1)}@keyframes creditbro-intro-away{0%,53%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-5px) scale(1.006)}}@keyframes creditbro-page-in{0%,40%{opacity:0;transform:translateY(6px)}92%,100%{opacity:1;transform:translateY(0)}}@keyframes creditbro-intro-fade-only{0%,53%{opacity:1}100%{opacity:0}}@keyframes creditbro-page-fade-only{0%,40%{opacity:0}92%,100%{opacity:1}}
