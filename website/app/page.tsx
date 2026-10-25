@@ -5,7 +5,7 @@ const FIGMA='https://www.figma.com/design/SSbeTrYNnD5PR5s5Noafmh/Creditbro?node-
 const systems=[
  ['Claude','Conversation','Answers credit questions and explains the numbers. The app handles calculations and actions.','https://www.anthropic.com/'],
  ['CRS','Credit reports','Supplies dated credit facts from fictional sandbox reports across three bureaus.','https://www.crscreditapi.com/'],
- ['Capital One Nessie','Banking data','Supplies simulated account activity for spending reports and budget reviews.','http://api.nessieisreal.com/'],
+ ['Capital One Nessie','Banking data','Supplies simulated account activity for spending reports and budget reviews.','https://nessieisreal.com/'],
  ['CREAO','Plans','Turns shared project details into a plan after the student gives permission.','https://agent.creao.ai/install/7c1f7506-2488-4564-8935-f3b1ee54666d?version=355fc713-1625-4c8c-bfd8-3b4d7cd0c113'],
  ['Figma','Design','Used with Claude to work through screens, refine the design, and hand it off for implementation.','https://www.figma.com/design/SSbeTrYNnD5PR5s5Noafmh/Creditbro?node-id=175-107'],
  ['Codex','Building and testing','Used for ideation, implementation, integrations, and testing. Claude also helped shape the idea and voice.','https://github.com/katherinerulanmiller/creditbro']
