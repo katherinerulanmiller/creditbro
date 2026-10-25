@@ -1,0 +1,15 @@
+{
+  "name": "creditbro",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test backend/*.test.mjs",
+    "demo": "node backend/demo.mjs run",
+    "dashboard": "node backend/dashboard.mjs",
+    "website": "npm --prefix website run dev"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

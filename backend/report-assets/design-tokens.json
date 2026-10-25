@@ -1,0 +1,216 @@
+{
+  "color": {
+    "brand": {
+      "sage": "#437C62",
+      "sage-deep": "#2F5E4A",
+      "sage-mist": "#E3EDE7",
+      "coral": "#E8836B",
+      "coral-deep": "#B5533D",
+      "coral-mist": "#FBE6DE"
+    },
+    "neutral": {
+      "cream": "#F8F4EE",
+      "white": "#FFFFFF",
+      "sand": "#F1ECE4",
+      "line": "#E8E1D6",
+      "track": "#EFEAE2",
+      "ink": "#1E2A25",
+      "muted": "#5B6560",
+      "on_pastel_text": "#4F5853"
+    },
+    "category": {
+      "food_out": "#C78500",
+      "groceries": "#1A9CB0",
+      "shopping": "#C93A78",
+      "transport": "#7480D6",
+      "subscriptions": "#7C3AC0",
+      "school_books": "#4E9A2E",
+      "other": "#9A9088"
+    },
+    "section": {
+      "up_next": "#FBEBC0",
+      "spending": "#F8DCCF",
+      "credit": "#D5ECDF",
+      "goals": "#E3DDF6",
+      "sky": "#D3E5F6",
+      "neutral": "#F1ECE4"
+    },
+    "status": {
+      "sample_bg": "#FDF3DC",
+      "sample_text": "#9A5B00",
+      "danger": "#B42318",
+      "success": "#2F5E4A"
+    },
+    "semantic": {
+      "bg/page": "cream",
+      "bg/surface": "white",
+      "text/primary": "ink",
+      "text/secondary": "muted",
+      "text/on-brand": "white",
+      "border/default": "line",
+      "logo/c": "ink",
+      "logo/b": "sage",
+      "avatar/bg": "sage"
+    },
+    "section_previous_v1": {
+      "up_next": "#E3EDE7",
+      "spending": "#F3EDE3",
+      "credit": "#FBE6DE",
+      "goals": "#ECE6DC"
+    },
+    "folder_on_sage": {
+      "up_next": "#F7DE96",
+      "spending": "#F5B9A5",
+      "credit": "#ABDABF",
+      "goals": "#CABFF2",
+      "note": "Welcome screen folders on white, ink tab labels"
+    },
+    "bg_subtle": "#FBF8F3",
+    "chart_bar_inactive": "#A9C9B8",
+    "previous_category_colors": {
+      "food": "#B88412",
+      "groceries": "#3A8F95",
+      "shopping": "#C9577A",
+      "transport": "#5B63B7",
+      "subscriptions": "#8A5BB0",
+      "school": "#7D8A2E",
+      "other": "#958E85"
+    }
+  },
+  "contrast_notes": {
+    "white on sage": 4.89,
+    "ink on coral": 5.58,
+    "ink on cream": 13.56,
+    "muted on white": 5.13,
+    "all category colors on white": ">=3.0 (graphics; always paired with text labels)"
+  },
+  "radius": {
+    "chip": 10,
+    "card": 18,
+    "report_image": 24,
+    "bubble": 18,
+    "pill": 999
+  },
+  "space": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48
+  ],
+  "font": {
+    "family": "Figtree",
+    "source": "Google Fonts (OFL) https://github.com/google/fonts/tree/main/ofl/figtree",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "type": {
+    "app": {
+      "display": [
+        56,
+        700,
+        -1.2
+      ],
+      "title": [
+        32,
+        700,
+        -0.6
+      ],
+      "h2": [
+        22,
+        600,
+        -0.2
+      ],
+      "body_lg": [
+        18,
+        400,
+        0
+      ],
+      "body": [
+        16,
+        400,
+        0
+      ],
+      "label": [
+        16,
+        600,
+        0
+      ],
+      "small": [
+        13,
+        500,
+        0.1
+      ]
+    },
+    "report_image_540": {
+      "_note": "Canvas is 540pt wide, export at 2x = 1080px. Nothing under 19px so it reads in a message bubble.",
+      "title": [
+        28,
+        700,
+        -0.3
+      ],
+      "hero": [
+        52,
+        600,
+        -1.2
+      ],
+      "hero_cents": [
+        24,
+        600,
+        0
+      ],
+      "eyebrow": [
+        17,
+        600,
+        1.8,
+        "UPPERCASE"
+      ],
+      "label": [
+        20,
+        500,
+        0
+      ],
+      "category": [
+        24,
+        600,
+        0
+      ],
+      "amount": [
+        24,
+        600,
+        0
+      ],
+      "percent": [
+        22,
+        500,
+        0
+      ],
+      "body": [
+        23,
+        400,
+        0
+      ],
+      "small": [
+        20,
+        400,
+        0
+      ],
+      "badge": [
+        19,
+        600,
+        0.2
+      ],
+      "gauge_value": [
+        30,
+        600,
+        -0.5
+      ]
+    }
+  }
+}

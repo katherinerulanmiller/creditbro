@@ -1,0 +1,4 @@
+// Match quoted student evidence despite typographic apostrophes/spacing, while
+// retaining the actual source substring. Words and amounts are never normalized away.
+function indexed(text){let value='',map=[],offset=0;for(const char of text){const start=offset;offset+=char.length;const normalized=char.normalize('NFKC').replace(/[‘’]/g,"'").replace(/[“”]/g,'"');for(const c of normalized){const token=/\s/.test(c)?' ':c;if(token===' '&&value.endsWith(' ')){map[map.length-1].end=offset;continue;}value+=token;map.push({start,end:offset});}}return {value,map};}
+export function sourceEvidence(text,quote){if(typeof text!=='string'||typeof quote!=='string'||!quote.trim())return null;const source=indexed(text),needle=indexed(quote).value.trim();const at=source.value.indexOf(needle);if(at<0||!needle)return null;return text.slice(source.map[at].start,source.map[at+needle.length-1].end);}

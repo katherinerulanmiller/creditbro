@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env*
+.dev.vars*
+*.enc
+**/key
+**/*-Setup.txt
+**/Dashboard-Access.txt
+**/imessage-state/
+**/demo-output/
+.wrangler/
+.vinext/
+.sites-runtime/
+*.tsbuildinfo
+.DS_Store
+*.tar.gz

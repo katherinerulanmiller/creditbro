@@ -1,0 +1,56 @@
+:root{
+  /* message images: creditbro green only */
+  --cb-chart-spend-1: #437C62; /* biggest item */
+  --cb-chart-spend-2: #8EB0A1;
+  --cb-chart-spend-3: #C3D5CD;
+  --cb-chart-more: #E3DBD1;   /* "N more" / other */
+  --cb-chart-day-inactive: #D5E4DC;
+  --cb-chart-track: #F4F0EA;
+  --cb-chart-upnext: #437C62;
+  --cb-chart-credit: #437C62;
+  --cb-chart-goals: #437C62;
+  --cb-chip-bg: #F1ECE4;
+  --cb-chip-icon: #1E2A25;
+  --cb-brand-sage: #437C62;
+  --cb-brand-sage-deep: #2F5E4A;
+  --cb-brand-sage-mist: #E3EDE7;
+  --cb-brand-coral: #E8836B;
+  --cb-brand-coral-deep: #B5533D;
+  --cb-brand-coral-mist: #FBE6DE;
+  --cb-neutral-cream: #F8F4EE;
+  --cb-neutral-white: #FFFFFF;
+  --cb-neutral-sand: #F1ECE4;
+  --cb-neutral-line: #E8E1D6;
+  --cb-neutral-track: #EFEAE2;
+  --cb-neutral-ink: #1E2A25;
+  --cb-neutral-muted: #5B6560;
+  --cb-category-food-out: #F2C94C;
+  --cb-category-groceries: #74D1A2;
+  --cb-category-shopping: #F59ABE;
+  --cb-category-transport: #7CC4EC;
+  --cb-category-subscriptions: #A69EF0;
+  --cb-category-school-books: #C5D67E;
+  --cb-category-housing: #EE9B85;
+  --cb-category-other: #D3C8BE;
+  --cb-section-up-next: #FBEBC0;
+  --cb-folder-up-next: #F7DE96;
+  --cb-folder-spending: #F5B9A5;
+  --cb-folder-credit: #ABDABF;
+  --cb-folder-goals: #CABFF2;
+  --cb-section-spending: #F8DCCF;
+  --cb-section-credit: #D5ECDF;
+  --cb-section-goals: #E3DDF6;
+  --cb-section-neutral: #F1ECE4;
+  --cb-status-sample-bg: #FDF3DC;
+  --cb-status-sample-text: #9A5B00;
+  --cb-status-danger: #B42318;
+  --cb-status-success: #2F5E4A;
+  --cb-font: 'Figtree', system-ui, sans-serif;
+  --cb-radius-chip: 10px;
+  --cb-radius-card: 18px;
+  --cb-radius-report-image: 24px;
+  --cb-radius-bubble: 18px;
+  --cb-radius-pill: 999px;
+  --cb-section-sky: #D3E5F6;
+  --cb-neutral-on-pastel-text: #4F5853;
+}

@@ -1,0 +1,180 @@
+{
+  "id": "P03",
+  "name": "JASMINE REYES",
+  "profile": "Thin file / Gen Z",
+  "decision": "REVIEW",
+  "summary": "22 year old with one student card and one phone plan, 8 months of history, nothing negative but not much to score on.",
+  "requests": [
+    {
+      "product": "credit_report",
+      "variant": "TransUnion",
+      "method": "POST",
+      "path": "/transunion/credit-report/standard/{config}",
+      "config": "tu-prequal-fico9",
+      "body": {
+        "firstName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "lastName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "ssn": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "addresses": [
+          {
+            "addressLine1": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+            "city": "BERKELEY",
+            "state": "CA",
+            "postalCode": "94704",
+            "borrowerResidencyType": "Current"
+          }
+        ]
+      },
+      "expected": "(TU / EFX / EXP): 660, thin file (1 / 1 / 5 tradelines)"
+    },
+    {
+      "product": "credit_report",
+      "variant": "Equifax",
+      "method": "POST",
+      "path": "/equifax/credit-report/standard/{config}",
+      "config": "efx-prequal-vantage4",
+      "body": {
+        "firstName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "lastName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "ssn": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "addresses": [
+          {
+            "addressLine1": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+            "city": "BERKELEY",
+            "state": "CA",
+            "postalCode": "94704",
+            "borrowerResidencyType": "Current"
+          }
+        ]
+      },
+      "expected": "(TU / EFX / EXP): 660, thin file (1 / 1 / 5 tradelines). Equifax output carries no subject name (sandbox files)."
+    },
+    {
+      "product": "credit_report",
+      "variant": "Experian",
+      "method": "POST",
+      "path": "/experian/credit-report/standard/{config}",
+      "config": "exp-prequal-vantage4",
+      "body": {
+        "firstName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "lastName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "ssn": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "addresses": [
+          {
+            "addressLine1": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+            "city": "BERKELEY",
+            "state": "CA",
+            "postalCode": "94704",
+            "borrowerResidencyType": "Current"
+          }
+        ]
+      },
+      "expected": "(TU / EFX / EXP): 660, thin file (1 / 1 / 5 tradelines)"
+    },
+    {
+      "product": "criminal",
+      "variant": "Criminal",
+      "method": "POST",
+      "path": "/criminal/new-request",
+      "config": null,
+      "body": {
+        "subjectInfo": {
+          "first": "JASMINE",
+          "last": "REYES",
+          "ssn": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+          "dob": "06-21-2004",
+          "zip": "94704"
+        }
+      },
+      "expected": "clean"
+    },
+    {
+      "product": "eviction",
+      "variant": "Eviction",
+      "method": "POST",
+      "path": "/eviction/new-request",
+      "config": null,
+      "body": {
+        "subjectInfo": {
+          "first": "JASMINE",
+          "last": "REYES",
+          "ssn": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+          "dob": "06-21-2004",
+          "zip": "94704"
+        }
+      },
+      "expected": "clean"
+    },
+    {
+      "product": "fraud_finder",
+      "variant": "FraudFinder",
+      "method": "POST",
+      "path": "/fraud-finder/{config}",
+      "config": "fraud-finder",
+      "body": {
+        "firstName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "lastName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "phoneNumber": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "email": "jasmine.reyes@example.com",
+        "ipAddress": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "address": {
+          "addressLine1": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+          "city": "BERKELEY",
+          "state": "CA",
+          "postalCode": "94704"
+        }
+      },
+      "expected": "risk.score 14 (low), email 3 yrs. Send name, phone, email and address; ipAddress is free."
+    },
+    {
+      "product": "pitchpoint_blj",
+      "variant": "PitchPoint",
+      "method": "POST",
+      "path": "/pp/fcrablj/data",
+      "config": null,
+      "body": {
+        "terms": {
+          "term": [
+            {
+              "person": {
+                "firstName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+                "lastName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+                "ssn": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE"
+              }
+            }
+          ]
+        }
+      },
+      "expected": "BankruptciesFound/JudgmentsFound/LiensFound: 0/0/0"
+    },
+    {
+      "product": "accurate_append",
+      "variant": "Reverse",
+      "method": "POST",
+      "path": "/accurate-append/reverse",
+      "config": null,
+      "body": {
+        "phoneNumber": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE"
+      },
+      "expected": "one result for the persona"
+    },
+    {
+      "product": "tu_identity_verification",
+      "variant": "TU identity",
+      "method": "POST",
+      "path": "/transunion/identity-manager-verification/basic",
+      "config": null,
+      "body": {
+        "firstName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "lastName": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "ssn": "REPLACE_WITH_OFFICIAL_SANDBOX_VALUE",
+        "dob": "2004-06-21",
+        "street1": "2210 UNIVERSITY AVE APT 4B",
+        "city": "BERKELEY",
+        "state": "CA",
+        "zip": "94704"
+      },
+      "expected": "result PASS. name, SSN, DOB and address all verify"
+    }
+  ]
+}

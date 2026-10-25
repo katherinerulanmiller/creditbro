@@ -1,0 +1,120 @@
+{
+  "demo": true,
+  "selected_persona": {
+    "id": "P03",
+    "display_name": "Jasmine",
+    "user_is_playing_this_person": true
+  },
+  "credit_evidence": {
+    "source": "CRS sandbox",
+    "persona_id": "P03",
+    "fictional": true,
+    "bureau": "transunion",
+    "retrieved_at": "2026-10-24T02:00:40.416613+00:00",
+    "facts": [
+      {
+        "field": "creditLimitAmount",
+        "value": "1500",
+        "source_path": "$.tradelines[0].creditLimitAmount"
+      },
+      {
+        "field": "monthsReviewedCount",
+        "value": "8",
+        "source_path": "$.tradelines[0].monthsReviewedCount"
+      },
+      {
+        "field": "pastDueAmount",
+        "value": "0",
+        "source_path": "$.tradelines[0].pastDueAmount"
+      },
+      {
+        "field": "currentBalanceAmount",
+        "value": "465",
+        "source_path": "$.tradelines[0].currentBalanceAmount"
+      },
+      {
+        "field": "monthsReviewedCount",
+        "value": "8",
+        "source_path": "$.tradelines[1].monthsReviewedCount"
+      },
+      {
+        "field": "pastDueAmount",
+        "value": "0",
+        "source_path": "$.tradelines[1].pastDueAmount"
+      },
+      {
+        "field": "currentBalanceAmount",
+        "value": "155",
+        "source_path": "$.tradelines[1].currentBalanceAmount"
+      },
+      {
+        "field": "scoreValue",
+        "value": "660",
+        "source_path": "$.scores[0].scoreValue"
+      },
+      {
+        "field": "scoreMaximumValue",
+        "value": "850",
+        "source_path": "$.scores[0].scoreMaximumValue"
+      },
+      {
+        "field": "scoreMinimumValue",
+        "value": "300",
+        "source_path": "$.scores[0].scoreMinimumValue"
+      },
+      {
+        "field": "Score model reported by CRS",
+        "value": "TransUnionVantageScore4.0",
+        "source_path": "$.scores[0].modelName"
+      },
+      {
+        "field": "Reported accounts",
+        "value": "2",
+        "source_path": "$.summaries.tradeSummary.tradesCount"
+      },
+      {
+        "field": "Reported revolving accounts",
+        "value": "1",
+        "source_path": "$.summaries.tradeSummary.revolvingTradesCount"
+      },
+      {
+        "field": "Reported revolving utilization (percent)",
+        "value": "31",
+        "source_path": "$.summaries.tradeSummary.revolvingCreditUtilization"
+      },
+      {
+        "field": "Reported collections",
+        "value": "0",
+        "source_path": "$.summaries.derogatorySummary.collectionsCount"
+      },
+      {
+        "field": "Reported bankruptcies",
+        "value": "0",
+        "source_path": "$.summaries.derogatorySummary.bankruptciesCount"
+      },
+      {
+        "field": "Reported 30-day lates",
+        "value": "0",
+        "source_path": "$.summaries.derogatorySummary._30DayLates"
+      },
+      {
+        "field": "Reported 60-day lates",
+        "value": "0",
+        "source_path": "$.summaries.derogatorySummary._60DayLates"
+      },
+      {
+        "field": "Reported 90-day lates",
+        "value": "0",
+        "source_path": "$.summaries.derogatorySummary._90DayLates"
+      }
+    ],
+    "limitations": [
+      "Fictional credit facts for the selected demo identity; not a real credit pull.",
+      "Missing fields are unknown. Income, savings and expenses are not supplied by CRS.",
+      "Months reviewed is not account age. Reported accounts need not all be open."
+    ]
+  },
+  "student_stated_facts": {},
+  "current_plan": null,
+  "completed_actions": []
+}

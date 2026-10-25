@@ -1,0 +1,192 @@
+{
+ "file": "https://www.figma.com/design/SSbeTrYNnD5PR5s5Noafmh",
+ "make_file": "https://www.figma.com/make/pZaFZ1RwOVDn5cDpCkB86T (import pending)",
+ "how_to_use": "Use the Figma MCP (get_design_context / get_screenshot) with fileKey SSbeTrYNnD5PR5s5Noafmh and these node IDs.",
+ "message_images_compact": {
+  "weekly_summary": "76:321",
+  "monthly_summary": "76:396",
+  "category_deep_dive": "76:448",
+  "daily_breakdown": "76:493",
+  "upcoming_reminders": "76:547",
+  "card_usage": "76:593",
+  "goal_progress": "76:624",
+  "subscriptions": "76:658",
+  "reminder_card": "70:545",
+  "credit_checkin": "56:873"
+ },
+ "full_reports_dashboard": {
+  "weekly_categories": "56:695",
+  "weekly_daily": "56:804",
+  "monthly_ring": "56:556"
+ },
+ "states": {
+  "partial": "56:928",
+  "no_spending": "56:960",
+  "not_connected": "56:986"
+ },
+ "components": {
+  "logo_mark": "29:103",
+  "logo_lockup": "29:108",
+  "avatar_contact_photo": "29:115",
+  "bunny_ink": "83:2",
+  "bunny_sage": "83:14",
+  "bunny_on_sage": "83:25",
+  "app_icon": "84:171",
+  "report_header": "49:678",
+  "sample_badge": "49:674",
+  "footer": "49:770",
+  "notice_states": "49:801",
+  "icons": {
+   "food": "49:654",
+   "groceries": "49:657",
+   "transport": "49:660",
+   "subscriptions": "49:663",
+   "other": "49:666",
+   "calendar": "49:669",
+   "books": "52:545"
+  }
+ },
+ "dashboard_screens": {
+  "welcome": "74:357",
+  "phone": "74:394",
+  "code": "74:413",
+  "setup": "74:439",
+  "home_up_next": "67:389",
+  "home_spending": "67:508",
+  "home_credit": "67:650",
+  "home_goals": "67:767",
+  "connections_sheet": "67:878",
+  "reports_week": "75:381",
+  "reports_month": "78:1068",
+  "report_detail": "75:468",
+  "reminders": "75:627",
+  "add_reminder": "78:1307",
+  "you": "75:695",
+  "category_detail": "78:1181",
+  "card_used": "78:1257"
+ },
+ "brand_board": "83:49",
+ "saved_contact_card": "84:118",
+ "conversation_threads": {
+  "weekly": "70:573",
+  "monthly": "70:674",
+  "reminder": "70:788",
+  "credit": "70:823"
+ },
+ "final_dashboard_prototype": {
+  "page": "07 \u00b7 FINAL \u00b7 Dashboard prototype (57:321)",
+  "note": "Screens converted to Direction B in place; same node IDs as before."
+ },
+ "final_message_images": {
+  "page": "07 \u00b7 FINAL \u00b7 Texts & graphs",
+  "weekly_summary": "97:91",
+  "monthly_summary": "97:173",
+  "category_deep_dive": "97:231",
+  "daily_breakdown": "97:282",
+  "upcoming_reminders": "97:342",
+  "card_usage": "97:394",
+  "goal_progress": "97:431",
+  "subscriptions": "97:471",
+  "reminder_card": "97:652",
+  "credit_checkin": "97:716",
+  "state_partial": "97:532",
+  "state_no_spending": "97:575",
+  "state_not_connected": "97:612",
+  "monthly_summary_demo_account": "118:475"
+ },
+ "refinement_page_09": {
+  "page": "09 \u00b7 Refinement \u00b7 Home, Library, You (141:54)",
+  "components": {
+   "file_closed_set": "141:133",
+   "nav_bar_set": "141:173"
+  },
+  "home": {
+   "closed": "142:55",
+   "up_next_open": "142:124",
+   "spending_open": "142:205",
+   "credit_open": "142:305",
+   "projects_open": "142:379",
+   "up_next_empty": "142:449"
+  },
+  "library": {
+   "reports": "143:327",
+   "projects": "143:377",
+   "alternate_two_sections": "143:408"
+  },
+  "report_detail": {
+   "october_snapshot": "143:466",
+   "week_oct_12_18_saved": "143:532"
+  },
+  "plan": {
+   "detail": "143:602",
+   "in_progress": "143:665"
+  },
+  "you": "143:691",
+  "states": {
+   "home_loading": "143:741",
+   "library_projects_empty": "143:761",
+   "copied_toast": "143:790",
+   "library_failed": "143:821"
+  },
+  "prototype_flow": "creditbro \u00b7 refined (Home, Library, You)"
+ },
+ "final_app": {
+  "page": "\u2605 FINAL \u00b7 creditbro app (175:107)",
+  "prototype_app": "https://www.figma.com/proto/SSbeTrYNnD5PR5s5Noafmh?node-id=175-631&starting-point-node-id=175%3A631",
+  "prototype_full_flow": "https://www.figma.com/proto/SSbeTrYNnD5PR5s5Noafmh?node-id=175-434&starting-point-node-id=175%3A434",
+  "mobile": {
+   "welcome": "175:434",
+   "phone": "175:461",
+   "code": "175:480",
+   "setup": "175:506",
+   "home_spending_week": "175:631",
+   "home_spending_month": "180:323",
+   "home_credit": "175:733",
+   "home_goals": "175:845",
+   "home_spending_scrolled": "217:938",
+   "home_credit_scrolled": "217:1033",
+   "home_goals_scrolled": "217:1142",
+   "home_loading": "190:3224",
+   "category_food_out": "175:1027",
+   "card_used": "175:1100",
+   "goal_detail": "192:412",
+   "library": "175:1150",
+   "report_week_oct12": "175:1320",
+   "report_september": "190:446",
+   "report_oct5": "192:538",
+   "report_sep28": "192:646",
+   "library_empty": "181:972",
+   "library_error": "190:3340",
+   "you": "175:1505",
+   "contact_card": "175:109",
+   "text_thread": "175:147"
+  },
+  "desktop": {
+   "home": "180:3128",
+   "home_month": "181:775",
+   "library": "180:3260",
+   "you": "180:3366",
+   "card_used": "192:3254",
+   "category": "192:3310",
+   "goal": "192:3392",
+   "report_week": "192:3483",
+   "report_september": "192:3610",
+   "report_oct5": "192:3683",
+   "report_sep28": "192:3731"
+  },
+  "components": {
+   "home_summary": "212:667",
+   "summary_bar": "217:922",
+   "coach_line": "212:661",
+   "home_folder_tabs": "215:907",
+   "week_month_switch": "212:919",
+   "avatar_cb": "190:422",
+   "sidebar": "154:175",
+   "nav_bar": "141:173",
+   "kit_week_chart": "175:1618",
+   "kit_check_row": "175:1601",
+   "kit_toggle": "175:1596"
+  },
+  "brand_board": "page 02, frame \u2605 Brand \u00b7 final (214:153)"
+ }
+}
