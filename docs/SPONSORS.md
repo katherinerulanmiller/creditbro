@@ -19,3 +19,14 @@
 Record the phone flow with a consenting tester; prepare the backup video and pitch; add GitHub to Devpost; verify track selections, agent/run evidence and final requirements; decide whether to make the pitch website accessible to judges. A public repository does not automatically make the site public. Do not publish private chats, contacts, account state or credentials as evidence.
 
 The public CRS request fixture has identity values removed, including fictional SSNs. Supply the official sponsor fixture privately through `CREDITBRO_CRS_PERSONA_FILE` for a live sandbox demonstration.
+
+## Codex / development tooling
+Codex was used to implement the messaging backend, deterministic calculators, provider integrations, report renderer, dashboard, failure handling and automated tests, and to prepare the public repository and website. Claude powers conversations at runtime and was also used during design/voice iteration; Figma supplied the design handoffs. This describes actual tool use, not a claim of eligibility for a particular OpenAI/Codex prize track.
+
+## Individual guides
+- [CRS](sponsors/CRS.md)
+- [CREAO](sponsors/CREAO.md)
+- [Capital One / Nessie](sponsors/CAPITAL-ONE.md)
+- [Anthropic](sponsors/ANTHROPIC.md)
+- [Figma](sponsors/FIGMA.md)
+- [Codex](sponsors/CODEX.md)

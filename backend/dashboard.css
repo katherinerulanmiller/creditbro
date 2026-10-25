@@ -43,3 +43,5 @@ body{background:#f5f3ef;font-weight:500}.shell{width:min(390px,100vw);height:min
 
 /* Fold immediately into a slim summary strip while scrolling */
 .summary-collapsed .summary-bar{padding:10px 38px 10px 14px;height:62px;border-radius:0 0 16px 16px;min-height:0}.summary-bar .summary-amount{margin:0;line-height:24px}.summary-bar .summary-amount strong{font-size:22px;line-height:24px}.summary-bar .summary-amount span{font-size:12px}.summary-bar .summary-stats{position:absolute;right:38px;top:10px;display:flex;gap:12px;min-height:0;border:0;margin:0;padding:0}.summary-bar .summary-stats .caps{display:none}.summary-bar .summary-stats strong,.summary-bar .summary-stats>div:last-child strong{font-size:14px;line-height:24px}.summary-bar .bar-track{height:3px;margin-top:8px}.summary-expand{height:44px;top:6px;right:0}.summary-bar .summary-stats>div:last-child{display:none}@media(max-width:359px){.summary-bar .summary-stats{display:none}}
+/* Same square file attachment under every active tab */
+.home-tabbed>.home-folder-body,.home-folder>.home-folder-body{border-top-left-radius:0!important}

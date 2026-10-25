@@ -7,7 +7,7 @@ A text-first credit and money companion for college students. Understand your cr
 - `backend/`: working local messaging coach and private dashboard; deterministic calculators, reminder scheduling, report PNG rendering, CRS, Nessie and CREAO integrations
 - `website/`: React/TypeScript pitch site with an interactive design tour and separate server-side Claude chat
 - `design/`: exported Figma brand assets, design tokens and node references
-- `docs/SPONSORS.md`: sponsor integration map and submission notes
+- [Sponsor guide](docs/SPONSORS.md): separate notes for CRS, CREAO, Capital One/Nessie, Anthropic, Figma and Codex
 
 The demo uses fictional Nessie banking data and an official fictional CRS P03 sandbox persona. They are separate sources, not a verified identity match. No real bank/email account, payment execution, credit application, employment screening or investment execution is included.
 
