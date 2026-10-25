@@ -107,7 +107,7 @@ The website normally opens at `http://127.0.0.1:5173`. The offline demo creates 
 
 ## Website
 
-[Creditbro pitch website](https://creditbro-college-demo.kmiller13524.chatgpt.site) — owner-private at the time of repository preparation; access must be checked before sharing with judges. A public GitHub repository does not change the site's audience.
+[Creditbro pitch website](https://creditbro-college-demo.kmiller13524.chatgpt.site) — public pitch website with static Figma screens, isolated chat, and a fictional-data dashboard. The private texting service is not exposed.
 
 Credentials, private chats, contacts, raw credit reports, encryption keys, and runtime state stay outside this repository. Public CRS identity fields are redacted; live sandbox testing requires the sponsor-provided fictional fixture.
 

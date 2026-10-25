@@ -13,10 +13,10 @@
 `backend/bridge.mjs`, `voice.md`, `host-actions.mjs`; `website/app/api/chat/route.ts`: real Claude conversations, contextual coaching, tool use and an isolated website chat. Host code owns arithmetic and execution. Prompt refinement is not model training. Verify the track's exact current requirements with organizers.
 
 ## Figma
-`design/` contains exported assets/tokens and node references. The dashboard implements the final screens; the website includes interactive design previews. Preserve an honest workflow history. The supplied track asks for Figma Slides, video under three minutes, stage notes up to 200 words/stage, prototype/code links, accessible files and education verification. Do not invent tool usage or timing.
+`design/` contains exported assets/tokens and node references. The dashboard implements the final screens; the website includes static Figma screen previews. Preserve an honest workflow history. The supplied track asks for Figma Slides, video under three minutes, stage notes up to 200 words/stage, prototype/code links, accessible files and education verification. Do not invent tool usage or timing.
 
 ## Remaining submission work
-Record the phone flow with a consenting tester; prepare the backup video and pitch; add GitHub to Devpost; verify track selections, agent/run evidence and final requirements; decide whether to make the pitch website accessible to judges. A public repository does not automatically make the site public. Do not publish private chats, contacts, account state or credentials as evidence.
+Record the phone flow with a consenting tester; prepare the backup video and pitch; add GitHub to Devpost; verify track selections, agent/run evidence and final requirements; check the public pitch website and demo links. A public repository does not automatically make the site public. Do not publish private chats, contacts, account state or credentials as evidence.
 
 The public CRS request fixture has identity values removed, including fictional SSNs. Supply the official sponsor fixture privately through `CREDITBRO_CRS_PERSONA_FILE` for a live sandbox demonstration.
 
