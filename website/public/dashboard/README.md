@@ -1,0 +1,1 @@
+Standalone public dashboard. Authored fictional fixture only. No backend modules, credentials, contacts, saved conversations, provider requests or outbound messaging. Preferences and cancellation mutate browser memory only; Reset reloads the original example.

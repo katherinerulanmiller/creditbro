@@ -34,3 +34,7 @@ The Figma design remains linked in the header and Figma sponsor card. It is usef
 Netlify functions documentation: https://docs.netlify.com/build/functions/get-started/
 
 Run `npm test` for mocked function checks. These tests never call Anthropic or send messages.
+
+## Public dashboard
+
+The standalone fictional dashboard is served at `/dashboard/`, with no login or private API. Its data is authored locally in `public/dashboard/demo-data.mjs`. Changes in the demo are held only in browser memory. See `docs/PUBLIC-DEMO.md` in the repository for privacy and validation details.
