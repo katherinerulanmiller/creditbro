@@ -110,3 +110,7 @@ The website normally opens at `http://127.0.0.1:5173`. The offline demo creates 
 [Creditbro pitch website](https://creditbro-college-demo.kmiller13524.chatgpt.site) — owner-private at the time of repository preparation; access must be checked before sharing with judges. A public GitHub repository does not change the site's audience.
 
 Credentials, private chats, contacts, raw credit reports, encryption keys, and runtime state stay outside this repository. Public CRS identity fields are redacted; live sandbox testing requires the sponsor-provided fictional fixture.
+
+## Netlify website package
+
+[`netlify/`](netlify/) contains the standalone current website with Vite, static guided interactions, and an optional Netlify Functions Claude endpoint. Use `netlify` as the base directory when importing this repository into Netlify. See [the deployment guide](netlify/README.md). It contains no texting service or private account state.

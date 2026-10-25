@@ -1,0 +1,16 @@
+import {voice} from '../../src/lib/voice';
+export default async function handler(request:Request){
+ if(request.method!=='POST')return Response.json({error:'Use POST.'},{status:405,headers:{Allow:'POST'}});
+ const json=(value:unknown,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'no-store'}});
+ const origin=request.headers.get('origin');if(origin && origin!==new URL(request.url).origin)return json({error:'Please use the conversation on this website.'},403);
+ const cfg=process.env as unknown as {ANTHROPIC_API_KEY?:string;ANTHROPIC_MODEL?:string};
+ if(!cfg.ANTHROPIC_API_KEY||!cfg.ANTHROPIC_MODEL)return json({error:'Live chat is not configured yet. You can still explore every chapter of the guided demo.'},503);
+ if(Number(request.headers.get('content-length')||0)>24000)return json({error:'Please start a shorter conversation.'},413);
+ let body;try{const raw=await request.text();if(raw.length>24000)return json({error:'Please start a shorter conversation.'},413);body=JSON.parse(raw)}catch{return json({error:'Please send a text message.'},400)}
+ if(!body||typeof body!=='object'||body.consent!==true||!Array.isArray(body.messages)||body.messages.length<1||body.messages.length>21||body.messages.some((m:{role:string,content:string},i:number)=>!m||typeof m!=='object'||m.role!==(i%2?'assistant':'user')||typeof m.content!=='string'||m.content.length>2000)||body.messages.at(-1).role!=='user')return json({error:'Start a new conversation after 10 exchanges, and keep each message under 1,500 characters.'},400);
+ try{
+ const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':cfg.ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},body:JSON.stringify({model:cfg.ANTHROPIC_MODEL,max_tokens:1200,system:voice+'\nOVERRIDING WEBSITE DEMO BOUNDARY: You are in an isolated Creditbro website conversation, not the live texting app. No tools, account data, saved profile, calendar, scheduler, CRS retrieval, CREAO execution, or outbound messaging are available. Never claim an action was performed. Do not use fictional amounts from the guided tour as user facts. Explain that reminders or plans can only be discussed here. Messages exist only in the current browser view. Keep replies concise. For specific current product, legal, or tax claims say you cannot verify them here. Do not promise score changes. Do not ask for sensitive identity/account data.',messages:body.messages}),signal:AbortSignal.timeout(25000)});
+ if(!r.ok)return json({error:r.status===429?'Creditbro is busy. Please wait a moment and try again.':'The model service could not reply. Your message did not schedule or change anything.'},502);
+ const result=await r.json() as {stop_reason?:string;content:{type:string,text?:string}[]};if(result.stop_reason==='max_tokens')return json({error:'The reply was cut short. Please try a shorter question.'},502);const reply=result.content.filter(x=>x.type==='text').map(x=>x.text).join('\n');if(!reply)throw Error();return json({reply:reply.replace(/[\u2014\u2013]/g,', ').trim().split(/\n\s*\n/).map(part=>/https?:\/\/\S+\.$/.test(part)?part:part.replace(/\.$/,'')).join('\n\n')});
+ }catch{return json({error:'The reply timed out or could not be retrieved. Please try again when ready.'},502)}
+}
