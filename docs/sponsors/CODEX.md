@@ -1,5 +1,5 @@
 # Codex / development tooling
-Codex was used to implement the messaging backend, deterministic calculators, provider integrations, report renderer, dashboard, failure handling and automated tests, and to prepare the public repository and website. Claude powers conversations at runtime and was also used during design/voice iteration; Figma supplied the design handoffs. This describes actual tool use, not a claim of eligibility for a particular OpenAI/Codex prize track.
+Both Codex and Claude helped with ideation. Claude supported the back-and-forth Figma design process and voice refinement. Codex supported ideation, implementation, integrations, and testing. Claude also powers the runtime conversation. This does not claim eligibility for a particular Codex prize.
 
 
 [All sponsor notes](../SPONSORS.md) · [Project README](../../README.md)

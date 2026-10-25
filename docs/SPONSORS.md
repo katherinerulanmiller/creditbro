@@ -21,7 +21,7 @@ Record the phone flow with a consenting tester; prepare the backup video and pit
 The public CRS request fixture has identity values removed, including fictional SSNs. Supply the official sponsor fixture privately through `CREDITBRO_CRS_PERSONA_FILE` for a live sandbox demonstration.
 
 ## Codex / development tooling
-Codex was used to implement the messaging backend, deterministic calculators, provider integrations, report renderer, dashboard, failure handling and automated tests, and to prepare the public repository and website. Claude powers conversations at runtime and was also used during design/voice iteration; Figma supplied the design handoffs. This describes actual tool use, not a claim of eligibility for a particular OpenAI/Codex prize track.
+Both Codex and Claude were used for ideation. Claude supported the back-and-forth Figma design process and voice refinement, and powers the runtime conversation. Codex supported ideation, implementation, provider integration, testing, and repository/site preparation. This is an account of tool use, not a claim of eligibility for an OpenAI/Codex prize.
 
 ## Individual guides
 - [CRS](sponsors/CRS.md)

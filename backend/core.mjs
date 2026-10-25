@@ -17,7 +17,7 @@ import {moveInFacts,moveInTool} from './planning.mjs';
 import {readFileSync} from 'node:fs';
 const VOICE=readFileSync(new URL('./voice.md',import.meta.url),'utf8');
 const EXAMPLES=JSON.parse(readFileSync(new URL('./examples/conversations.json',import.meta.url),'utf8'));
-const JASMINE=JSON.parse(readFileSync(new URL('./handoff/jasmine-context.json',import.meta.url),'utf8'));
+const JASMINE=JSON.parse(readFileSync(new URL('./examples/jasmine-context.json',import.meta.url),'utf8'));
 export const INTRO='Creditbro demo: I’m an AI financial-education coach for college students, whether you’re new to credit or already have accounts. I can tailor help and save your check-in preferences; confirmed reminders and optional synthetic weekly reports work while this Mac stays awake and the coach runs. Real account monitoring is not connected. This demo uses Claude by Anthropic; your coaching messages will be sent there and saved encrypted locally. Please use fictional details—no SSNs, bank logins or account numbers. Reply YES to begin, STOP to pause, HELP for help. Messages come from your friend’s Apple account.';
 export const OPENING=ONBOARDING_OPENING;
 export function sensitive(text){return /\b\d{3}[- ]\d{2}[- ]\d{4}\b|\b\d{9,19}\b|(?:password|ssn|social security|routing number|account number)\s*[:=]\s*\S+/i.test(text);}
